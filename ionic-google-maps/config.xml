@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="india.beckme.com" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Beck</name>
+  <description>
+        Your Instant delivery Network
+    </description>
+  <author email="support@beckme.com" href="https://www.beckme.com/">
+      Team Beck
+    </author>
+  <allow-navigation href="http://*/*"/>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <access origin="http://maps.google.com"/>
+  <access origin="http://*.google.com"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="*.firebaseio.com"/>
+  <allow-intent href="auth.firebase.com"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="19"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <preference name="orientation" value="portrait"/>
+  <preference name="SplashScreen" value="screen"/>
+  <preference name="AutoHideSplashScreen" value="false"/>
+  <preference name="FadeSplashScreen" value="true"/>
+  <preference name="FadeSplashScreenDuration" value="5"/>
+  <preference name="ShowSplashScreenSpinner" value="false"/>
+  <preference name="loadUrlTimeoutValue" value="99999999"/>
+  <feature name="StatusBar">
+    <param name="ios-package" onload="true" value="CDVStatusBar"/>
+  </feature>
+  <platform name="android">
+    <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png"/>
+    <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png"/>
+    <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png"/>
+    <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png"/>
+    <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png"/>
+    <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png"/>
+    <splash density="port-ldpi" src="resources/android/splash/drawable-port-ldpi-screen.png"/>
+    <splash density="port-mdpi" src="resources/android/splash/drawable-port-mdpi-screen.png"/>
+    <splash density="port-hdpi" src="resources/android/splash/drawable-port-hdpi-screen.png"/>
+    <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png"/>
+    <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png"/>
+    <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png"/>
+  </platform>
+  <plugin name="cordova-plugin-facebook4" spec="~1.4.1">
+    <variable name="APP_ID" value="1053692574651925"/>
+    <variable name="APP_NAME" value="BECK"/>
+  </plugin>
+</widget>
