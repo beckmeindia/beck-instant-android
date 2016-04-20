@@ -1,0 +1,17 @@
+<ion-modal-view>
+<div class="bar bar-header item-input-inset" style="background:#252525">
+<button ng-click="closeAutoA()" class="button button-icon icon ion-android-arrow-back" style="margin-top:20px;color:#fff;font-size:16px;"></button>		
+</div> 
+<ion-content>  
+<ul class="list">
+<div style="height:200px;background:#252525;width:100%;padding-top:10px;"><img src={{wish.imgurl}} id="dp" style="margin-top:40px; width:75px; height:75px; border-radius:50%; display:block; margin-left:auto; margin-right:auto;">
+<button class="button button-full button-dark" style="background:#252525;border:none"> {{wish.name}} &nbsp;&nbsp;&nbsp;<i class="icon ion-ios-arrow-right"></i></button>
+</div>
+<button class="button button-clear button-positive" style="text-align:left;width:100%;font-size:16px;margin:7px;margin-top:30px;margin-left:45px;" ng-click="opentrck()"> Track Orders </button><br>
+<button class="button button-clear button-positive" style="text-align:left;width:100%;font-size:16px;margin:7px;margin-left:45px;" ng-click="openwish()"> Wish Money </button><br>
+<button class="button button-clear button-positive" style="text-align:left;width:100%;font-size:16px;margin:7px;margin-left:45px;"> Call Support </button>
+<button class="button button-clear button-positive" style="text-align:left;width:100%;font-size:16px;margin:7px;margin-left:45px;" ng-click="openrtcrd()"> Rate Card </button>
+<!--button class="button button-clear button-positive" style="text-align:left;width:100%;font-size:16px;margin:7px;margin-left:45px;"> Invite & Earn </button-->
+</ul>
+</ion-content>  
+</ion-modal-view>

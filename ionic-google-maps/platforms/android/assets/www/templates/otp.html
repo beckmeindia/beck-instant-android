@@ -1,0 +1,12 @@
+<ion-modal-view>  
+  <div class="bar bar-header item-input-inset" style="height:60px;">
+  <label class="item-input-wrapper" style="border:none;background:#fff">
+    <i class="icon ion-iphone placeholder-icon" style="font-size:22px;width:25px;"></i>
+    <input id="otpcode" type="tel" placeholder="Enter the OTP code sent as SMS">	
+  </label> 
+</div> 
+<div style="padding:10px;padding-top:30px;padding-bottom:20px">
+	<button id="verifyotp" ng-click="otpverify()" class="button button-block button-positive" style="background:#252525; border-radius:5px;border:none">VERIFY</button>
+	<button onclick="otpcall()" class="button button-clear button-full button-positive">Resend OTP</button>
+</div>
+</ion-modal-view>

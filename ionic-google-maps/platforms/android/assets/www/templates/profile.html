@@ -1,0 +1,20 @@
+<ion-modal-view>
+<div class="bar bar-header item-input-inset" style="background:#252525">
+<button ng-click="closeAutoA()" class="button button-icon icon ion-android-arrow-back" style="margin-top:20px;color:#fff;font-size:14px;"></button>		
+</div> 
+<ion-content has-bouncing="false">  
+<ul class="list">
+<div style="height:220px;background:#252525;width:100%;padding-top:10px;"><img src="profile.png" id="dp" style="margin-top:60px; width:75px; height:75px; border-radius:50%; display:block; margin-left:auto; margin-right:auto;">
+<button  class="button button-full button-dark" style="background:#252525;border:none"> {{wish.name}}</button>
+</div>
+<div id="trckordrdiv">
+<button class="button button-clear button-positive" style="text-align:left;width:100%;font-size:16px;margin:7px;margin-top:30px;margin-left:45px;" ng-click="opentrck()"> Track Orders </button><br>
+<button class="button button-clear button-positive" style="text-align:left;width:100%;font-size:16px;margin:7px;margin-left:45px;" ng-click="openwish()"> Beck Money </button><br>
+<button class="button button-clear button-positive" style="text-align:left;width:100%;font-size:16px;margin:7px;margin-left:45px;" onclick="callsupport()"> Call Support </button>
+<button class="button button-clear button-positive" style="text-align:left;width:100%;font-size:16px;margin:7px;margin-left:45px;" ng-click="openrtcrd()"> Rate Card </button>
+<button class="button button-clear button-positive" style="text-align:left;width:100%;font-size:16px;margin:7px;margin-left:45px;" ng-click="signout()"> Logout </button>
+</div>
+<button ng-click="signupmdlshow()" id="signup" class="button button-clear button-positive" style="text-align:left;width:100%;font-size:16px;margin:7px;margin-top:30px;margin-left:45px;" ng-click="opentrck()"> Sign Up / Log In </button>
+</ul>
+</ion-content>  
+</ion-modal-view>

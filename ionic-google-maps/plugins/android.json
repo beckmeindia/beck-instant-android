@@ -1,0 +1,58 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "com.matimenich.plugins.nativeclick": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "cordova-plugin-datepicker": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "cordova-plugin-locationservices": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "cordova-plugin-sms": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "plugin.google.maps": {
+            "API_KEY_FOR_ANDROID": "AIzaSyB3WxNLnooClFL0u7v6f4E_OPWlx7y_2OA",
+            "PACKAGE_NAME": "india.beckme.com"
+        },
+        "com.appsflyer.phonegap.plugins.appsflyer": {
+            "PACKAGE_NAME": "india.beckme.com"
+        }
+    },
+    "dependent_plugins": {}
+}

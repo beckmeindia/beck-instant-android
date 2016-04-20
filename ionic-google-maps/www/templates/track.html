@@ -1,0 +1,24 @@
+<ion-modal-view id="trckinpg" style="display:none">
+<div class="bar bar-header bar-light" style="height:65px; background:#fff; border-bottom:1px solid #c3c3c3">
+	<img id="riderimg" style="width:55px; margin-left:5px">
+	<h1 class="title" style="font-size:12px;font-weight:bold;color:#2bb1de;letter-spacing:1px;">YOUR RIDER</h1>
+	<h2 id="ridername" class="title" style="font-size:12px;top:20px;"></h2>	
+	<button onclick="callrider()" class="button button-icon icon ion-ios-telephone" style="color:#252525;padding:10px;font-size:16px;"></button>	
+</div>
+ <ion-content>
+<div id="trckmap" style="height: 100%;"></div>
+	<div class="button-bar btngrid" style="background:#fff;border-width:0px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-right: 1px solid #c3c3c3; border-left: 1px solid #c3c3c3; border-top: 1px solid #c3c3c3;">
+	<a class="button button-clear button-positive" style="height:20px;color:#c5c5c5;font-size:12px;font-weight:bold;border-right:1px solid #c3c3c3;letter-spacing:1px">DISTANCE</a>
+	<a class="button button-clear button-positive" style="height:20px;color:#c5c5c5;font-size:12px;font-weight:bold;border-right:1px solid #c3c3c3;letter-spacing:1px">PICKUP</a>
+	<a class="button button-clear button-positive" style="height:20px;color:#c5c5c5;font-size:12px;font-weight:bold;letter-spacing:1px;">DELIVERY</a>
+</div>
+<div class="button-bar btngrid2" style="background:#fff;border-width:0px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; border-left: 1px solid #c3c3c3; border-bottom: 1px solid #c3c3c3;border-right: 1px solid #c3c3c3; ">
+  <a id="pickpdrpdist" class="button button-clear button-positive" style="height:20px;font-weight:bold;font-size:12px;border-right:1px solid #c3c3c3"></a>
+  <a id="pickuptym" class="button button-clear button-positive" style="height:20px;font-weight:bold;font-size:12px;border-right:1px solid #c3c3c3"></a>
+  <a id="delvtym" class="button button-clear button-positive" style="height:20px;font-weight:bold;font-size:12px;"></a>
+</div>
+<div ng-click="closetrack()" class="button-bar requestbtn" style="height:50px;background:#fff; border-radius: 5px; background:#252525">
+  <a class="button button-clear button-positive" style="margin-top:4px;letter-spacing:2px;font-size:16px;color:#fff">CLOSE</a>
+</div>
+ </ion-content>  
+</ion-modal-view>

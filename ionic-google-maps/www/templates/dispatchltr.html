@@ -1,0 +1,29 @@
+  <ion-modal-view>
+	<div class="bar bar-header item-input-inset" style="background:#252525">
+	<button ng-click="closeltr()" class="button button-icon icon ion-android-arrow-back" style="color:#fff"></button>		
+	<h1 class="title" style="color:#fff">PICKUP LATER</h1>   
+	</div> 
+  <ion-content scroll="false" style="padding-top:40px;margin-left:10px;margin-right:20px;height:150%">
+   <div class="list card" ng-click="datepickup()">
+   <a class="item item-icon-left">
+    <i class="icon ion-ios-calendar"></i>
+    <div id="datepkcup" style="white-space:normal">Add Date for Pickup</div>
+  </a>
+  </div>
+  <div class="list card" id="timepickp" style="display:none" ng-click="timepickup()">
+  <a class="item item-icon-left" style="padding-right:10px">
+    <i class="icon ion-ios-clock"></i>
+    <div id="timepkcup" style="white-space:normal">Add Time for Pickup</div>
+  </a>
+  </div>
+  <div id="slotcard" class="card" style="display:none;margin-top:20px;">
+  <div class="item item-divider">
+    Pickup Slot Details
+  </div>
+  <div id="slot" class="item item-text-wrap"></div>
+  </div>  
+  <button id="pickpltr" class="button button-block button-dark" ng-click="dispatchltr()" style="display:none;border-radius:5px">
+  CONFIRM PICKUP LATER
+  </button>  
+  </ion-content>  
+</ion-modal-view>

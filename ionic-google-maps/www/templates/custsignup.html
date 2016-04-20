@@ -1,0 +1,164 @@
+<ion-modal-view>  
+  <ion-header-bar style="background:#252525">
+	<button style="font-size:12px;color:#fff" class="button button-icon icon ion-android-arrow-back" ng-click="closesignup()"></button>      
+   <h1 class="title" style="letter-spacing:1px;text-align:center;color:#fff;font-size:14px;">REGISTRATION DETAILS</h1>
+  	<button id="donebtn" style="letter-spacing:1px;font-weight:bold;color:#fff;font-size:12px;" class="button button-clear button-positive" ng-click="openotpverf()">DONE</button>
+	</ion-header-bar>
+ <ion-content>  
+  <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label" style="font-size:14px;color:#2bb1de">Phone Number</span>
+    <input style="font-size:14px" id="usrtel" type="tel" placeholder="Your 10 digit mobile number" value="{{wish.id}}">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label" style="font-size:14px;color:#2bb1de">Full Name</span>
+    <input style="font-size:14px" id="usrname" type="text" placeholder="Full Name" value="{{wish.name}}">
+  </label>  
+  <label class="item item-input item-stacked-label">
+    <span class="input-label" style="font-size:14px;color:#2bb1de">Email</span>
+    <input style="font-size:14px" id="usremail" type="email" placeholder="Email" value="{{wish.email}}">
+  </label>
+    <li class="item item-checkbox" style="background:#e8e8e8;font-size:14px">
+     <label class="checkbox">
+       <input id="merchantbox" type="checkbox">
+     </label>
+     Are you a merchant? (Check if yes)
+	</li>
+	<li class="item item-checkbox" style="font-size:14px">
+     <label class="checkbox">
+       <input id="merchantbox" type="checkbox" ng-model="checked">
+     </label>
+		Show Terms and conditions
+	</li>
+	<div class="card" ng-show="checked">
+	<div class="item item-text-wrap">
+		By signing up you agree to these Terms and Conditions<br>
+		PLEASE READ THESE TERMS CAREFULLY BEFORE ACCESSING OR USING THE SERVICES.
+Your access and use of the Services constitutes your agreement to be bound by these Terms, which establishes a contractual relationship between you and BECK. If you do not agree to these Terms, you may not access or use the Services. These Terms expressly supersede prior agreements or arrangements with you. BECK may immediately terminate these Terms or any Services with respect to you, or generally cease offering or deny access to the Services or any portion thereof, at any time for any reason.
+Supplemental terms may apply to certain Services, such as policies for a particular event, activity or promotion, and such supplemental terms will be disclosed to you in connection with the applicable Services. Supplemental terms are in addition to, and shall be deemed a part of, the Terms for the purposes of the applicable Services. Supplemental terms shall prevail over these Terms in the event of a conflict with respect to the applicable Services.
+BECK may amend the Terms related to the Services from time to time. Amendments will be effective upon BECK's posting of such updated Terms at this location or the amended policies or supplemental terms on the applicable Service. Your continued access or use of the Services after such posting constitutes your consent to be bound by the Terms, as amended.
+
+ THE SERVICES
+
+The Services constitute a technology platform that enables users of BECK's mobile applications or websites provided as part of the Services (each, an Application) to arrange and schedule logistics services with independent third party providers of such services, including independent third party logistics providers under agreement with BECK or certain of BECK's affiliates (Third Party Providers). Unless otherwise agreed by BECK in a separate written agreement with you, the Services are made available solely for your personal, noncommercial use. YOU ACKNOWLEDGE THAT BECK DOES NOT PROVIDE LOGISTICS SERVICES AND THAT ALL SUCH LOGISTICS SERVICES ARE PROVIDED BY INDEPENDENT THIRD PARTY CONTRACTORS WHO ARE NOT EMPLOYED BY BECK OR ANY OF ITS AFFILIATES.
+
+
+LICENSE.
+Subject to your compliance with these Terms, BECK grants you a limited, non-exclusive, non-sublicensable, revocable, non-transferrable license to: (i) access and use the Applications on your personal device solely in connection with your use of the Services; and (ii) access and use any content, information and related materials that may be made available through the Services, in each case solely for your personal, noncommercial use. Any rights not expressly granted herein are reserved by BECK and BECK's licensors.
+
+RESTRICTIONS.
+You may not: (i) remove any copyright, trademark or other proprietary notices from any portion of the Services; (ii) reproduce, modify, prepare derivative works based upon, distribute, license, lease, sell, resell, transfer, publicly display, publicly perform, transmit, stream, broadcast or otherwise exploit the Services except as expressly permitted by BECK; (iii) decompile, reverse engineer or disassemble the Services except as may be permitted by applicable law; (iv) link to, mirror or frame any portion of the Services; (v) cause or launch any programs or scripts for the purpose of scraping, indexing, surveying, or otherwise data mining any portion of the Services or unduly burdening or hindering the operation and/or functionality of any aspect of the Services; or (vi) attempt to gain unauthorized access to or impair any aspect of the Services or its related systems or networks.
+
+PROVISION OF THE SERVICES.
+You acknowledge that portions of the Services may be made available under BECK's various brands or request options associated with logistics. You also acknowledge that the Services may be made available under such brands or request options by or in connection with: (i) certain of BECK's subsidiaries and affiliates; or (ii) independent Third Party Providers, including logistics network company riders, transportation charter permit holders or holders of similar transportation permits, authorizations or licenses.
+
+THIRD PARTY SERVICES AND CONTENT.
+The Services may be made available or accessed in connection with third party services and content (including advertising) that BECK does not control. You acknowledge that different terms of use and privacy policies may apply to your use of such third party services and content. BECK does not endorse such third party services and content and in no event shall BECK be responsible or liable for any products or services of such third party providers. Additionally, Apple Inc., Google, Inc., Microsoft Corporation or BlackBerry Limited and/or their applicable international subsidiaries and affiliates will be third-party beneficiaries to this contract if you access the Services using Applications developed for Apple iOS, Android, Microsoft Windows, or Blackberry-powered mobile devices, respectively. These third party beneficiaries are not parties to this contract and are not responsible for the provision or support of the Services in any manner. Your access to the Services using these devices is subject to terms set forth in the applicable third party beneficiary's terms of service.
+
+OWNERSHIP.
+The Services and all rights therein are and shall remain BECK's property or the property of BECK's licensors. Neither these Terms nor your use of the Services convey or grant to you any rights: (i) in or related to the Services except for the limited license granted above; or (ii) to use or reference in any manner BECK's company names, logos, product and service names, trademarks or services marks or those of BECK's licensors.
+
+YOUR USE OF THE SERVICES
+
+PERMITTED ITEMS
+
+ Riders can only transport items that a normal human can carry weighing no more than 30 pounds
+ Your rider will be on bike, and may refuse to accept some oversized items
+ RESTRICTED ITEMS: You may NOT send for delivery:
+-    People or animals of any size
+-    Illegal items
+-    Alcohol
+-    Fragile items
+-    Very expensive or rare items
+-    Dangerous items (weapons, explosives, flammable, etc.)
+-    Stolen goods
+-   Any items for which you do not have permission to send
+
+ If your rider refuses to accept an item due to size or weight or because it is a RESTRICTED ITEM or because the rider is asked to purchase an item, a cancellation fee will apply
+ Riders reserve the right to refuse to accept any item in their sole discretion
+ Riders will not purchase items for delivery
+
+Delivery Guarantee
+ BECK will guarantee lost or damaged items up to Rs.2000/-, except for RESTRICTED ITEMS for which no guarantee applies
+   EXCEPT FOR LOSS OR DAMAGE DUE TO A Rider'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT (FOR WHICH THE GUARANTEE SET FORTH ABOVE SHALL APPLY), REQUESTOR [YOU] IS FULLY RESPONSIBLE AND LIABLE FOR THE ITEMS SENT FOR DELIVERY BY Rider HEREUNDER. OUR LIABILITY TO REQUESTOR [YOU] SHALL IN NO EVENT EXCEED Rs.2000/-
+
+Tracking Your Item
+ Follow your rider's progress in the BECK app once the delivery is picked up.
+GPS will show rider's location
+
+Communicating with Your Rider
+ Text detailed pickup instructions if getting into the building isn't easy and straightforward
+   Call your rider at any time by tapping the call button on the BECK app
+
+Chain of Custody
+There must be someone at the delivery address to receive your item(s). One of the following must occur in order to complete delivery:
+ If you'd like to waive the normal chain of custody process, a text message confirmation is required indicating no recipient is necessary
+If no one is available at the delivery address and chain of custody is not waived, rider returns item(s) and bills requester [you] full delivery fare + a cancellation
+fee
+
+Cancellation and Fulfillment Policy
+ If no one is present at your pickup location, a cancellation fee will apply
+ If no one is present at your delivery location, your rider will wait 5minutes before returning your item. Requestor [you] will be responsible for fullfare.
+ Any delivery requested without recipient present will require text message confirmation from requestor stating no recipient is necessary.
+ If no one is present at delivery location and requestor is [you are] also unavailable when item is returned, requestor is accountable. Rider will leave item at original pickup location and requestor [you] will be responsible for full fare.
+
+USER ACCOUNTS.
+In order to use most aspects of the Services, you must register for and maintain an active personal user Services account (Account). You must be at least 18 years of age, or the age of legal majority in your jurisdiction (if different than 18), to obtain an Account. Account registration requires you to submit to BECK certain personal information, such as your name, address, mobile phone number and age, as well as at least one valid payment method (either a credit card or accepted payment partner). You agree to maintai accurate, complete, and up-to-date information in your Account. Your failure to maintain accurate, complete, and up-to-date Account information, including having an invalid or expired payment method on file, may result in your inability to access and use the Services or BECK's termination of these Terms with you. You are responsible for all activity that occurs under your Account, and you agree to maintain the security and secrecy of your Account username and password at all times. Unless otherwise permitted by BECK in writing, you may only possess one Account.
+USER REQUIREMENTS AND CONDUCT.
+The Service is not available for use by persons under the age of 18. You may not authorize third parties to use your Account, and you may not allow persons under the age of 18 to receive logistics services from Third Party Providers unless they are accompanied by you. You may not assign or otherwise transfer your Account to any other person or entity. You agree to comply with all applicable laws when using the Services, and you may only use the Services for lawful purposes (e.g., no transport of unlawful or hazardous materials). You will not, in your use of the Services, cause nuisance, annoyance, inconvenience, or property damage, whether to the Third Party Provider or any other party. In certain instances you may be asked to provide proof of identity to access or use the Services, and you agree that you may be denied access to or use of the Services if you refuse to provide proof of identity.
+TEXT MESSAGING.
+By creating an Account, you agree that the Services may send you informational text (SMS) messages as part of the normal business operation of your use of the Services. You may opt-out of receiving text (SMS) messages from BECK at any time by sending an email to beckmeindia@gmail.com indicating that you no longer wish to receive such messages, along with the phone number of the mobile device receiving the messages. You acknowledge that opting out of receiving text (SMS) messages may impact your use of the Services.
+PROMOTIONAL CODES.
+BECK may, in BECK's sole discretion, create promotional codes that may be redeemed for Account credit, or other features or benefits related to the Services and/or a Third Party Provider's services, subject to any additional terms that BECK establishes on a per promotional code basis (Promo Codes). You agree that Promo Codes: (i) must be used for the intended audience and purpose, and in a lawful manner; (ii) may not be duplicated, sold or transferred in any manner, or made available to the general public (whether posted to a public form or otherwise), unless expressly permitted by BECK; (iii) may be disabled by BECK at any time for any reason without liability to BECK; (iv) may only be used pursuant to the specific terms that BECK establishes for such Promo Code; (v) are not valid for cash; and (vi) may expire prior to your use. BECK reserves the right to withhold or deduct credits or other features or benefits obtained through the use of Promo Codes by you or any other user in the event that BECK determines or believes that the use or redemption of the Promo Code was in error, fraudulent, illegal, or in violation of the applicable Promo Code terms or these Terms.
+USER PROVIDED CONTENT.
+BECK may, in BECK's sole discretion, permit you from time to time to submit, upload, publish or otherwise make available to BECK through the Services textual, audio, and/or visual content and information, including commentary and feedback related to the Services, initiation of support requests, and submission of entries for competitions and promotions (User Content). Any User Content provided by you remains your property. However, by providing User Content to BECK, you grant BECK a worldwide, perpetual, irrevocable, transferrable, royalty-free license, with the right to sublicense, to use, copy, modify, create derivative works of, distribute, publicly display, publicly perform, and otherwise exploit in any manner such User Content in all formats and distribution channels now known or hereafter devised (including in connection with the Services and BECK's business and on third-party sites and services), without further notice to or consent from you, and without the requirement of payment to you or any other person or entity.
+You represent and warrant that: (i) you either are the sole and exclusive owner of all User Content or you have all rights, licenses, consents and releases necessary to grant BECK the license to the User Content as set forth above; and (ii) neither the User Content nor your submission, uploading, publishing or otherwise making available of such User Content nor BECK's use of the User Content as permitted herein will infringe, misappropriate or violate a third party's intellectual property or proprietary rights, or rights of publicity or privacy, or result in the violation of any applicable law or regulation.
+You agree to not provide User Content that is defamatory, libelous, hateful, violent, obscene, pornographic, unlawful, or otherwise offensive, as determined by BECK in its sole discretion, whether or not such material may be protected by law. BECK may, but shall not be obligated to, review, monitor, or remove User Content, at BECK's sole discretion and at any time and for any reason, without notice to you.
+
+NETWORK ACCESS AND DEVICES.
+You are responsible for obtaining the data network access necessary to use the Services. Your mobile network's data and messaging rates and fees may apply if you access or use the Services from a wireless-enabled device and you shall be responsible for such rates and fees. You are responsible for acquiring and updating compatible hardware or devices necessary to access and use the Services and Applications and any updates thereto. BECK does not guarantee that the Services, or any portion thereof, will function on any particular hardware or devices. In addition, the Services may be subject to malfunctions and delays inherent in the use of the Internet and electronic communications.
+
+
+
+PAYMENT
+
+You understand that use of the Services may result in charges to you for the services or goods you receive from a Third Party Provider (Charges ). After you have received services or goods obtained through your use of the Service, BECK will facilitate your payment of the applicable Charges on behalf of the Third Party Provider as such Third Party Provider's limited payment collection agent. Payment of the Charges in such manner shall be considered the same as payment made directly by you to the Third Party Provider. Charges will be inclusive of applicable taxes where required by law. Charges paid by you are final and non-refundable, unless otherwise determined by BECK.
+
+All Charges are due immediately and payment will be facilitated by BECK using the preferred payment method designated in your Account, after which BECK will send you a receipt by email. If your primary Account payment method is determined to be expired, invalid or otherwise not able to be charged, you agree that BECK may, as the Third Party Provider's limited payment collection agent, use a secondary payment method in your Account, if available.
+As between you and BECK, BECK reserves the right to establish, remove and/or revise Charges for any or all services or goods obtained through the use of the Services at any time in BECK's sole discretion. Further, you acknowledge and agree that Charges applicable in certain geographical areas may increase substantially during times of high demand. BECK will use reasonable efforts to inform you of Charges that may apply, provided that you will be responsible for Charges incurred under your Account regardless of your awareness of such Charges or the amounts thereof. BECK may from time to time provide certain users with promotional offers and discounts that may result in different amounts charged for the same or similar services or goods obtained through the use of the Services, and you agree that such promotional offers and discounts, unless also made available to you, shall have no bearing on your use of the Services or the Charges applied to you. You may elect to cancel your request for services or goods from a Third Party Provider at any time prior to such Third Party Provider's arrival, in which case you may be charged a cancellation fee.
+This payment structure is intended to fully compensate the Third Party Provider for the services or goods provided. Except with respect to logistics services requested through the Application, BECK does not designate any portion of your payment as a tip or gratuity to the Third Party Provider. Any representation by BECK (on BECK's website, in the Application, or in BECK's marketing materials) to the effect that tipping is voluntary, not required, and/or included in the payments you make for services or goods provided is not intended to suggest that BECK provides any additional amounts, beyond those described above, to the Third Party Provider. You understand and agree that, while you are free to provide additional payment as a gratuity to any Third Party Provider who provides you with services or goods obtained through the Service, you are under no obligation to do so. Gratuities are voluntary. After you have received services or goods obtained through the Service, you will have the opportunity to rate your experience and leave additional feedback about your Third Party Provider.
+
+DISCLAIMERS; LIMITATION OF LIABILITY; INDEMNITY.
+
+DISCLAIMER.
+THE SERVICES ARE PROVIDED AS IS AND AS AVAILABLE. BECK DISCLAIMS ALL REPRESENTATIONS AND WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, NOT EXPRESSLY SET OUT IN THESE TERMS, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN ADDITION, BECK MAKES NO REPRESENTATION, WARRANTY, OR GUARANTEE REGARDING THE RELIABILITY, TIMELINESS, QUALITY, SUITABILITY OR AVAILABILITY OF THE SERVICES OR ANY SERVICES OR GOODS REQUESTED THROUGH THE USE OF THE SERVICES, OR THAT THE SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE. BECK DOES NOT GUARANTEE THE QUALITY, SUITABILITY, SAFETY OR ABILITY OF THIRD PARTY PROVIDERS. YOU AGREE THAT THE ENTIRE RISK ARISING OUT OF YOUR USE OF THE SERVICES, AND ANY SERVICE OR GOOD REQUESTED IN CONNECTION THEREWITH, REMAINS SOLELY WITH YOU, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW.
+LIMITATION OF LIABILITY.
+BECK SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOST DATA, PERSONAL INJURY OR PROPERTY DAMAGE RELATED TO, IN CONNECTION WITH, OR OTHERWISE RESULTING FROM ANY USE OF THE SERVICES, EVEN IF BECK HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BECK SHALL NOT BE LIABLE FOR ANY DAMAGES, LIABILITY OR LOSSES ARISING OUT OF: (i) YOUR USE OF OR RELIANCE ON THE SERVICES OR YOUR INABILITY TO ACCESS OR USE THE SERVICES; OR (ii) ANY TRANSACTION OR RELATIONSHIP BETWEEN YOU AND ANY THIRD PARTY PROVIDER, EVEN IF BECK HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BECK SHALL NOT BE LIABLE FOR DELAY OR FAILURE IN PERFORMANCE RESULTING FROM CAUSES BEYOND BECK'S REASONABLE CONTROL. 
+
+BECK'S SERVICES MAY BE USED BY YOU TO REQUEST AND SCHEDULE TRANSPORTATION OF GOODS OR LOGISTICS SERVICES WITH THIRD PARTY PROVIDERS, BUT YOU AGREE THAT BECK HAS NO RESPONSIBILITY OR LIABILITY TO YOU RELATED TO ANY TRANSPORTATION OF GOODS OR LOGISTICS SERVICES PROVIDED TO YOU BY THIRD PARTY PROVIDERS OTHER THAN AS EXPRESSLY SET FORTH IN THESE TERMS.
+
+
+You agree to indemnify and hold BECK and its officers, directors, employees and agents harmless from any and all claims, demands, losses, liabilities, and expenses (including attorneys' fees) arising out of or in connection with: (i) your use of the Services or services or goods obtained through your use of the Services; (ii) your breach or violation of any of these Terms; (iii) BECK's use of your User Content; or (iv) your violation of the rights of any third party, including Third Party Providers.
+
+GOVERNING LAW; ARBITRATION.
+
+Except as otherwise set forth in these Terms, these Terms shall be exclusively governed by and construed in accordance with the laws of State of Maharashtra. 
+
+OTHER PROVISIONS
+
+CLAIMS OF COPYRIGHT INFRINGEMENT.
+Claims of copyright infringement should be sent to BECK's designated agent via email on beckmeindia@gmail.com
+
+
+
+NOTICE.
+BECK may give notice by means of a general notice on the Services, electronic mail to your email address in your Account, or by written communication sent to your address as set forth in your Account. You may give notice to BECK by written communication via registered post to BECK's address at 7th Floor, Malhotra Chambers, Off.Govandi Station Road, Deonar-Chembur, Mumbai - 400088
+
+GENERAL.
+You may not assign or transfer these Terms in whole or in part without BECK's prior written approval. You give your approval to BECK for it to assign or transfer these Terms in whole or in part, including to: (i) a subsidiary or affiliate; (ii) an acquirer of BECK's equity, business or assets; or (iii) a successor by merger. No joint venture, partnership, employment or agency relationship exists between you, BECK or any Third Party Provider as a result of the contract between you and BECK or use of the Services.
+If any provision of these Terms is held to be illegal, invalid or unenforceable, in whole or in part, under any law, such provision or part thereof shall to that extent be deemed not to form part of these Terms but the legality, validity and enforceability of the other provisions in these Terms shall not be affected. In that event, the parties shall replace the illegal, invalid or unenforceable provision or part thereof with a provision or part thereof that is legal, valid and enforceable and that has, to the greatest extent possible, a similar effect as the illegal, invalid or unenforceable provision or part thereof, given the contents and purpose of these Terms. These Terms constitute the entire agreement and understanding of the parties with respect to its subject matter and replaces and supersedes all prior or contemporaneous agreements or undertakings regarding such subject matter. In these Terms, the words including and include mean including, but not limited to.
+
+	</div>
+</div>
+</div>
+</ion-modal-view>

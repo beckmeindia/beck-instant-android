@@ -1,0 +1,19 @@
+<ion-modal-view>
+<div class="bar bar-header item-input-inset" style="background:#252525">
+<button ng-click="closertcrd()" class="button button-icon icon ion-android-arrow-back" style="color:#fff"></button>		
+<h1 class="title" style="color:#fff">RATE CARD</h1>   
+</div> 
+  <ion-content style="margin-top:40px">
+   <div class="card" ng-repeat="rate in rates">
+  <div class="item item-divider">
+   {{rate.description}}
+  </div>
+  <!--div class="item item-text-wrap" style="font-weight:bold;text-decoration: line-through;">
+    {{rate.fare}}
+  </div-->
+  <div class="item item-text-wrap" style="font-weight:bold;color:#2bb1de;">
+    {{rate.faredisc}}
+  </div>
+	</div>	
+  </ion-content>  
+</ion-modal-view>

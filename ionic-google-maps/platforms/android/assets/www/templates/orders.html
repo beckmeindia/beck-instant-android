@@ -1,0 +1,28 @@
+<ion-view> 
+<div class="bar bar-header item-input-inset" style="background:#252525">
+<button ng-click="closetrck()" class="button button-icon icon ion-android-arrow-back" style="color:#fff"></button>		
+<h1 class="title" style="color:#fff">TRACK ORDERS</h1>   
+</div>
+  <ion-content style="margin-top:40px">
+  <div class="list">
+    <a ng-click="openrider(ordr.orderid)" class="item item-avatar" href="#" ng-repeat="ordr in ordersgng">
+	  <h2>OrderID - {{ ordr.orderid }}</h2>
+      <p style="margin-top:5px;margin-bottom:5px">Delivery Code - <span style="color:#ff0000;">{{ordr.deliverycode}}</span></p>
+	  <p style="margin-top:5px;margin-bottom:5px">Delivery Fare - <span style="color:#2bb1de">Rs. {{ordr.deliveryFare}}</span></p>
+	  <p>Status - <span style="color:#009d00">On the Way</span></p>
+	  <p style="margin-top:5px">{{ordr.ordertime}}&nbsp;&nbsp;&nbsp;&nbsp;{{ordr.orderdate}}</p>
+    </a>
+	</div>
+	<li class="item " style="background:#e8e8e8;margin-top:-20px">    
+	<i class="icon ion-checkmark-circled placeholder-icon" style="font-size:22px;width:25px; margin-right:25px"></i>
+    Previous Orders 
+	</li>
+	<div class="list">
+    <a class="item item-avatar" href="#" ng-repeat="ordr in orders">
+	  <h2>OrderID - {{ ordr.orderid }}</h2>
+      <p>Status - Completed</p>
+	  <p style="margin-top:5px">{{ordr.ordertime}}&nbsp;&nbsp;&nbsp;&nbsp;{{ordr.orderdate}}</p>
+    </a>
+	</div>	  
+  </ion-content>
+</ion-view>

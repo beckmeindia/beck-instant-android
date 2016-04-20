@@ -1,0 +1,27 @@
+<ion-modal-view>
+<div class="bar bar-header item-input-inset" style="background:#252525">
+<button ng-click="closesti()" class="button button-icon icon ion-android-arrow-back" style="color:#fff"></button>		
+<h1 class="title" style="color:#fff">FARE ESTIMATOR</h1>   
+</div> 
+  <ion-content scroll="false" style="padding-top:40px;margin-left:10px;margin-right:10px;">
+   <div class="list card">
+   <a class="item item-icon-left">
+    <i class="icon ion-ios-location" style="color:#006700"></i>
+    <div id="pickupesti" style="white-space:normal"></div>
+  </a>
+  <a ng-click="openthedeli()" class="item item-icon-left" style="padding-right:10px">
+    <i class="icon ion-ios-location" style="color:#b30000"></i>
+    <div id="deliesti" style="white-space:normal"></div>
+  </a>
+	</div>
+
+  <div id="farepart" class="card" style="display:none;margin-top:20px;">
+  <div class="item item-divider">
+    Estimated Trip Details
+  </div>
+	<div id="farecase" class="item item-text-wrap"></div>
+	<div id="distesti" class="item item-text-wrap"></div>
+  </div>
+  
+  </ion-content>  
+</ion-modal-view>

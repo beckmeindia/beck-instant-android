@@ -1,0 +1,33 @@
+<ion-modal-view>
+  <ion-header-bar style="background:#252525">
+	<button style="font-size:12px;color:#252525" class="button button-icon icon ion-ios-arrow-back"></button>      
+   <h1 class="title" style="letter-spacing:1px;text-align:center;color:#fff;font-size:14px;">DELIVERY DETAILS</h1>
+  	<button style="letter-spacing:1px;font-weight:bold;color:#fff;font-size:12px;" class="button button-clear button-positive" ng-click="showdelv()">NEXT</button>
+  </ion-header-bar>
+ <ion-content>  
+   <div class="list" style="border:1px solid #000">   
+  <label class="item item-input item-floating-label">
+    <span class="input-label" style="font-size:14px;color:#2bb1de">Contact Name</span>
+    <input style="font-size:14px" id="delvname2" type="text" placeholder="Delivery Contact Name">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label" style="font-size:14px;color:#2bb1de">Delivery Full Address</span>
+    <input style="font-size:14px" id="delvaddr2" type="text" placeholder="Delivery Full Address">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label" style="font-size:14px;color:#2bb1de">Mobile Number</span>
+    <input style="font-size:14px" id="delvcontact2" type="tel" placeholder="Mobile Number">
+  </label>
+</div>
+<div class="list" style="margin-top:-22px;margin-bottom:250px;">
+<li class="item " style="background:#e8e8e8;">    
+  <i class="icon ion-bookmark placeholder-icon" style="font-size:22px;width:25px; vertical-align:-3px;"></i>
+    Saved Delivery Addresses 
+  </li>
+  <div class="item item-button-right" ng-repeat="detail in deliverydetails">
+    <div style="line-height:180%;color:#c2c2c2" ng-click="fillboxes2(detail)">{{detail.delvcontactname}}<br>{{detail.delvcontactaddr}}<br>{{detail.delvcontactnum}}</div>    
+  <button ng-click="deliverydetails.$remove(detail)" class="button button-clear" style="margin-left:10px"><i class="icon ion-minus-circled"></i></button>
+  </div>  
+</div>
+  </ion-content>  
+</ion-modal-view>
